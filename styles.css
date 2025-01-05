@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Inter Bold";
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter SemiBold";
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0,0%,8%);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: hsl(0,0%,12%);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: min(90vw, 385px);
+    aspect-ratio: 385/610;
+    border-radius: 10px;
+    row-gap: 1rem;
+    padding-top: min(1rem);
+    padding-bottom: min(1rem);
+}
+
+img {
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: 0.75rem;
+}
+
+a {
+   
+    font-family: "Inter SemiBold";
+    color: lightgray;
+    text-decoration: none;
+    font-size: min(0.9rem, 1rem);
+    width: clamp(17.19rem, 18.75rem, 18.75rem);
+    height: 2.8125rem;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: hsl(0,0%,20%);
+    border-radius: 5%;
+}
+
+#name {
+    font-family: "Inter SemiBold";
+    color: hsl(0,0%,90%);
+    font-size: 1.5rem;
+    justify-self: center;
+}
+
+#location {
+    font-family: "Inter SemiBold";
+    color: hsl(75, 94%, 57%);
+    font-size: 0.9rem;
+    opacity: 80%;
+    justify-self: center;
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+}
+
+#description {
+    font-family: "Inter Regular";
+    color: hsl(0,0%,70%);
+    font-size: 0.9rem;
+    justify-self: center;
+    margin-bottom: 0.5rem;
+}
+
+a:hover {
+    color: hsl(0,0%,12%);
+    background-color: hsl(75, 94%, 57%);
+}
